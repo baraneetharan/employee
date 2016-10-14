@@ -20,4 +20,5 @@ before_script:
 
 script:
   - npm run test-single-run
+  - npm startwebdriver
   - (npm start > /dev/null &)  && (npm run protractor)
