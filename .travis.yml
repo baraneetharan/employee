@@ -14,6 +14,7 @@ install:
   - sudo apt-get install -q google-chrome-stable
   
 before_script:
+  - npm install protractor -g
   - npm install 
   - sleep 3
 
