@@ -21,4 +21,3 @@ before_script:
 script:
   - npm run test-single-run
   - (npm start > /dev/null &)  && (npm run protractor)
-  - xpdf /home/travis/build/baraneetharan/employeereport/Clientside-Report/Unittest/units.html
