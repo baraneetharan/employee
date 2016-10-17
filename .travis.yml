@@ -22,4 +22,3 @@ before_script:
 script:
   - npm run test-single-run
   - (npm start > /dev/null &)  && (npm run protractor)
-  - lynx  report/Clientside-Report/Unittest/units.html
