@@ -26,3 +26,4 @@ script:
 after_success:
  - cd $TRAVIS_BUILD_DIR/report/Clientside-Report/Unittest
  - ls
+ - echo $TRAVIS_BUILD_DIR/report/Clientside-Report/Unittest/units.html
