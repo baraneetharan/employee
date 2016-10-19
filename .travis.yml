@@ -24,4 +24,4 @@ script:
   - (npm start > /dev/null &)  && (npm run protractor)
 
 after_success:
- - open --a "Google Chrome" http://www.apple.com
+ - open -a "Google Chrome" http://www.apple.com
