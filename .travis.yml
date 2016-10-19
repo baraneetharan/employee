@@ -24,4 +24,4 @@ script:
   - (npm start > /dev/null &)  && (npm run protractor)
 
 after_script:
-- python html2text.py /home/travis/build/baraneetharan/employee/report/Clientside-Report/Unittest/units.html
+- python html2text.py file://localhost/home/travis/build/baraneetharan/employee/report/Clientside-Report/Unittest/units.html
