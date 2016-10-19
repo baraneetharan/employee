@@ -23,8 +23,5 @@ script:
   - npm run test-single-run
   - (npm start > /dev/null &)  && (npm run protractor)
 
-after_success:
- - cd $TRAVIS_BUILD_DIR/report/Clientside-Report/Unittest
- - ls
- - echo $TRAVIS_BUILD_DIR/report/Clientside-Report/Unittest/units.html
- - python html2text.py report/Clientside-Report/Unittest/units.html
+after_script:
+- python html2text.py report/Clientside-Report/Unittest/units.html
