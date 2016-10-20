@@ -19,7 +19,8 @@
     "protractor-screenshot-reporter": "0.0.5",
     "karma-coverage": "^0.5.5",
     "karma-html-detailed-reporter": "^1.1.8",
-    "karma-htmlfile-reporter": "^0.2.2"
+    "karma-htmlfile-reporter": "^0.2.2",
+    "coveralls":"2.11.2"
     
   },
   "scripts": {
