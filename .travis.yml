@@ -16,6 +16,7 @@ install:
   
 before_script:
   - npm install protractor -g
+  - npm install coveralls --save-dev  
   - npm install 
   - sleep 3
 
@@ -23,5 +24,6 @@ script:
   - npm run test-single-run
   - (npm start > /dev/null &)  && (npm run protractor)
 
-after_script:
+after_script:  
+- cat ./build/coverage/**/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 - python html2text.py http://localhost/home/travis/build/baraneetharan/employee/report/Clientside-Report/Unittest/units.html
