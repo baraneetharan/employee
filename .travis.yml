@@ -27,3 +27,8 @@ script:
 after_script:  
 - cat ./build/coverage/**/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 - python html2text.py http://localhost/home/travis/build/baraneetharan/employee/report/Clientside-Report/Unittest/units.html
+
+email:
+recipients:
+
+– baraneetharan.ramasamy@kgfsl.com
