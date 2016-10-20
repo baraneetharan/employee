@@ -16,7 +16,7 @@ install:
   
 before_script:
   - npm install protractor -g
-  - npm install coveralls --save-dev  
+  - npm install coveralls 
   - npm install 
   - sleep 3
 
