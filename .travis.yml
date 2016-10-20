@@ -25,5 +25,5 @@ script:
   - (npm start > /dev/null &)  && (npm run protractor)
 
 after_script:  
-- cat ./build/coverage/**/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+- cat coverage/**/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 - python html2text.py http://localhost/home/travis/build/baraneetharan/employee/report/Clientside-Report/Unittest/units.html
